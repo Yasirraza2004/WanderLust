@@ -36,7 +36,7 @@ module.exports.showListing = async (req, res) => {
       req.flash("error", "Listing you requested for does not exist!");
       return res.redirect("/listings");
     }
-    console.log(listing);
+    // console.log(listing);
     res.render("listings/show.ejs", { listing });
   };
 
@@ -57,7 +57,7 @@ module.exports.showListing = async (req, res) => {
     newListing.image = {url, filename};
     newListing.geometry = response.body.features[0].geometry;
     let savedListing = await newListing.save();
-    console.log(savedListing);
+    // console.log(savedListing);
 
     req.flash("success", "New Listing Created!");
     res.redirect("/listings");
