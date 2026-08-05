@@ -7,11 +7,7 @@
         </a>
 
         <!-- Mobile Toggle -->
-        <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -19,17 +15,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <!-- Search -->
-            <form class="d-flex search-form mx-auto" role="search">
-                <input
-                    class="form-control search-input"
-                    type="search"
-                    placeholder="Search destinations">
+            <form class="search-form mx-auto" role="search">
+                <input class="form-control search-input" type="search" placeholder="Start your search">
 
-                <button class="btn search-btn" type="submit">
-                    <div class="search">
+                <button class="search-btn" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <span class="d-none d-md-inline ms-1">Search</span>
-                    </div>
+                    <span>Search</span>
                 </button>
             </form>
 
@@ -54,15 +45,15 @@
                         Log in
                     </a>
 
-                <% } %>
+                    <% } %>
 
-                <% if(currUser){ %>
+                        <% if(currUser){ %>
 
-                    <a class="nav-link fw-semibold" href="/logout">
-                        Logout
-                    </a>
+                            <a class="nav-link fw-semibold" href="/logout">
+                                Logout
+                            </a>
 
-                <% } %>
+                            <% } %>
 
             </div>
 

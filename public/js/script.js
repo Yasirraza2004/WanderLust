@@ -36,3 +36,27 @@ taxSwitch.addEventListener("click", () => {
     }
   }
 });
+
+
+//scrolls the category
+const categories = document.getElementById("categories");
+const leftBtn = document.getElementById("scrollLeft");
+const rightBtn = document.getElementById("scrollRight");
+
+if (categories) {
+
+    leftBtn.addEventListener("click", () => {
+        categories.scrollBy({
+            left: -250,
+            behavior: "smooth"
+        });
+    });
+
+    rightBtn.addEventListener("click", () => {
+        categories.scrollBy({
+            left: 250,
+            behavior: "smooth"
+        });
+    });
+
+}
