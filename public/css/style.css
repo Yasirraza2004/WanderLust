@@ -370,6 +370,10 @@ main {
     flex-shrink:0;
 }
 
+.tax-info {
+    display: none;
+}
+
 @media (max-width:768px){
 
     .navbar-collapse{
